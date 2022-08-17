@@ -4,10 +4,10 @@
     - resumido
     - legivel
 
-    Obs: Valores nao especificados no shorthand irao assumir os valores
-    padrao da propriedade.
+    Obs: Valores nao especificados no shorthand irão assumir o valor
+    padrão da propriedade.
 
-    Obs2: A ordem dos valores do shorthand nao importa.
+    Obs2: A ordem dos valores do shorthand não importa.
 
     As propriedades que aceitam shorthand podem ser encontradas em:
         https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties

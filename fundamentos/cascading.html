@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cascading</title>
 
-    <!-- Estilo importado com link eh o terceiro na ordem de cascata -->
+    <!-- Estilo importado com link é o terceiro na ordem de cascata -->
     <link rel="stylesheet" href="cascading.css">
     <!-- O ultimo estilo da tag <link> sobescreve os estilos de tag <link> anteriores -->
     <link rel="stylesheet" href="exemplo.css">
 
     <style>
         h1 {
-            /* Segundo na ordem de prioridade de cascata */
+            /* Estilo na tag <style> no <head> é o
+              segundo na ordem de prioridade de cascata */
             margin: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- Estilo inline eh o primeiro na ordem de cascata -->
+    <!-- Estilo inline é o primeiro na ordem de cascata -->
     <h1 style="color: purple;">Titulo</h1>
     <h2 class="sub" id="my-sub">
         Subtitulo
