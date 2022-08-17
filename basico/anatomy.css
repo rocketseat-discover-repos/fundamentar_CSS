@@ -1,0 +1,15 @@
+/*  Anatomia do CSS
+
+    Selector -> h1, h2
+    Declaration -> {...}
+    Properties -> color, font-size and background-color
+    Property Value -> blueviolet, 14px and brown
+*/
+
+h1, h2 { /* Agrupamento de propriedades */
+    color: rgb(105, 29, 175);
+    font-size: 14px;
+    /* background: burlywood; */
+    background-color: rgb(235, 160, 160);
+}
+/* background e background-color sao iguais */

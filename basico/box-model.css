@@ -1,0 +1,16 @@
+/* Conceito de caixas (box-model)
+
+    * Elementos HTML sao caixas
+    * Propriedades comuns: 
+        - Posicionamentos
+        - tamanhos
+        - espacamentos
+        - bordas
+        - cores
+*/
+h1 {
+    border: 1px solid red;
+    font-size: 16px;
+    margin: 200px;
+    padding: 60px;
+}

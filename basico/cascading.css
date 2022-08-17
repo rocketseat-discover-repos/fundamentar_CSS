@@ -1,0 +1,73 @@
+/* CASCADING
+
+    - O estilo eh lido de cima para baixo
+
+    - Sao levados em consideracao 3 fatores:
+        1. Origem do estilo
+        2. Especificidade
+        3. Importancia
+*/
+
+/* Pelo principio de cascata onde o CSS eh lido de cima para baixo */
+h1 {
+    color: red;
+}
+
+h1 {
+    /* Esse valor sobescreve o valor de cor definido previamente */
+    color: blue;
+
+    /* Esse valor eh adicionado ao elemento */
+    font-size: 14px;
+}
+
+/* Origem do estilo
+
+    inline > tag style > tag link
+*/
+
+/*  Especificidade
+
+    É um cálculo matemático, onde cada tipo de seletor
+    e origem do estilo possuem valores a serem considerados.
+
+    0. Universal selector, combinators e negation pseudo-class (:not())
+    1. Element type selector e pseudo-elements (::before, ::after)
+    10. Classes e attribute selectors ([type="radio"])
+    100. ID selector
+    1000. Inline
+*/
+
+h2 {
+    /* A regra !important passa por cima
+    da ordem de especificidade, porem seu uso
+    deve ser evitado ao maximo */
+    color: darkgrey !important;
+}
+
+/* Eh possivel tambem somar as especificidades,
+    da seguinte forma */
+h2.sub#my-sub {
+    color: orange;
+}
+
+/*
+    Seguindo a ordem de prioridade das especificidades,
+    inline > id > class > tag element > universal selector
+*/
+#my-sub,
+#my-sub strong { /* Para encontrar elemento dentro de outro */
+    color: darkgreen;
+}
+
+.sub {
+    color: cornflowerblue;
+}
+
+h2 {
+    color: chocolate;
+}
+
+* {
+    color: black;
+}

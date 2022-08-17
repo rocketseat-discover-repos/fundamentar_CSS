@@ -1,0 +1,39 @@
+/* Shorthand
+
+    - juncao de propriedades
+    - resumido
+    - legivel
+
+    Obs: Valores nao especificados no shorthand irao assumir os valores
+    padrao da propriedade.
+
+    Obs2: A ordem dos valores do shorthand nao importa.
+
+    As propriedades que aceitam shorthand podem ser encontradas em:
+        https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
+*/
+
+div {
+    background-color: #000;
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+/* Aplicando o shorthand na propriedade background */
+div {
+    background: #000 url(images/bg.gif) no-repeat left top;
+}
+
+div {
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aplicando o shorthand na propriedade font */
+div {
+    font: italic bold .8em/1.2 Arial, Helvetica, sans-serif;
+}

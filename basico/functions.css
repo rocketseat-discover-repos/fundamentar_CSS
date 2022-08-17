@@ -1,0 +1,11 @@
+/* 
+    Functions
+
+    Aceitam determinados parametros e retornam um valor final
+
+    Exemplos:
+*/
+div {
+    color: rgb(255, 0, 100);
+    width: calc(100% - 10px);
+}

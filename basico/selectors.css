@@ -1,0 +1,25 @@
+/* Tipos de selectors */
+
+/*  Global selector -> `*` */
+* {
+    margin: 0;
+}
+
+/* Element type selector -> `h1, h2, div, span` */
+h1, h2 {
+    color: rgb(105, 29, 175);
+    font-size: 14px;
+    background-color: rgb(235, 160, 160);
+}
+
+/* ID selector -> `#box, #container` */
+#container {
+    width: 200px;
+}
+
+/* Class selector -> `.red, .m-40` */
+.m-40 {
+    margin: 40px;
+}
+
+/* Attribute selector, Pseudo-class, Pseudo-element e outros */

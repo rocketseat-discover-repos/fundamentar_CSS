@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading</title>
+
+    <!-- Estilo importado com link eh o terceiro na ordem de cascata -->
+    <link rel="stylesheet" href="cascading.css">
+    <!-- O ultimo estilo da tag <link> sobescreve os estilos de tag <link> anteriores -->
+    <link rel="stylesheet" href="exemplo.css">
+
+    <style>
+        h1 {
+            /* Segundo na ordem de prioridade de cascata */
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Estilo inline eh o primeiro na ordem de cascata -->
+    <h1 style="color: purple;">Titulo</h1>
+    <h2 class="sub" id="my-sub">
+        Subtitulo
+        <strong>Aqui</strong>
+    </h2>
+</body>
+</html>
